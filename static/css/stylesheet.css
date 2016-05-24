@@ -1,0 +1,91 @@
+/*
+ * global styles for site
+ */
+
+
+/* FONT */
+
+@font-face {
+  font-family: Neue Haas Grotesk Light;
+  font-weight: 350;
+  src: url("../fonts/NHaasGroteskDSPro-35XLt.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Neue Haas Grotesk;
+  font-weight: 550;
+  src: url("../fonts/NHaasGroteskDSPro-55Rg.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Neue Haas Grotesk Bold;
+  font-weight: 750;
+  src: url("../fonts/NHaasGroteskDSPro-75Bd.otf") format("opentype");
+}
+
+/* GLOBAL STYLES */
+
+body{
+  font-family: Neue Haas Grotesk, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+a,
+a:hover,
+a:focus{
+  color: #333;
+}
+
+a:hover,a:focus{
+  text-decoration: underline;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #222;
+  border: 1px solid #222;
+  border-radius: 0px;
+}
+
+.font-light{
+  font-family: Neue Haas Grotesk Light, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.font-bold{
+  font-family: Neue Haas Grotesk Bold, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+.long-word{
+  word-wrap: break-word;
+}
+
+/* styles for index.html homepage */
+
+body{
+  padding: 35px;
+}
+
+.heading{
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.description{
+  line-height: 1.3;
+}
+
+.hash{
+  line-height: 1.2;
+}
+
+#footer-info{
+  margin-top: 30px;
+}
+
