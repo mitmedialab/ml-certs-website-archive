@@ -27,6 +27,7 @@
 
 body{
   font-family: Neue Haas Grotesk, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: 0.7px;
 }
 
 a,
@@ -35,7 +36,7 @@ a:focus{
   color: #333;
 }
 
-a:hover,a:focus{
+a,a:hover,a:focus{
   text-decoration: underline;
 }
 
@@ -48,6 +49,7 @@ a:hover,a:focus{
   background-color: #222;
   border: 1px solid #222;
   border-radius: 0px;
+  letter-spacing: 0.7px;
 }
 
 .font-light{
@@ -87,5 +89,10 @@ body{
 
 #footer-info{
   margin-top: 30px;
+}
+
+.btn-docs{
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
