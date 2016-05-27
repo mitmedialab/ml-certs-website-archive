@@ -28,6 +28,7 @@
 body{
   font-family: Neue Haas Grotesk, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 0.7px;
+  padding-top: 70px;
 }
 
 a,
@@ -71,7 +72,7 @@ a,a:hover,a:focus{
 /* styles for index.html homepage */
 
 body{
-  padding: 35px;
+  /*padding: 35px;*/
 }
 
 .heading{
@@ -96,3 +97,46 @@ body{
   margin-bottom: 10px;
 }
 
+.navbar-nav{
+  padding-left: 17%;
+}
+
+.navbar-default{
+  background-color: #fff;
+  border: 0px;
+}
+
+.navbar-default .navbar-nav>li>a, 
+.navbar-default .navbar-nav>.active>a{
+  color: #000;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover{
+  text-decoration: underline;
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-default .navbar-toggle{
+  border: 0px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: 0px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}

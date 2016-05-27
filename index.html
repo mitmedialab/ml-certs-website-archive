@@ -30,8 +30,38 @@
     </script>
   </head>
  
-    <body>
-
+  <body id='home'>
+  <nav class="navbar navbar-default navbar-fixed-top" id="site-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#docs">Code and Docs</a>
+          </li>
+          <li>
+            <a href="#examples">Examples</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-2 col-xs-4">
@@ -46,11 +76,12 @@
           <p class="description font-light">
               An incubation project by the <a href="http://learn.media.mit.edu" target="_blank">Media Lab Learning Initiative</a> and <a href="http://www.learningmachine.com" target="_blank">Learning Machine</a> that builds an ecosystem for creating, sharing, and verifying blockchain-based educational certificates. Digital certificates are registered on the Bitcoin blockchain, cryptographically signed, and tamper proof. All code is open-source and we invite feedback, contributions, and general discussion.
           </p>
-          <p class="description font-light"> 
+          <p class="description font-light">
             Research Team: Juliana Nazaré and Kim Hamilton
             <br>
             PI: Philipp Schmidt
           </p>
+          <a class="anchor" id="docs"></a>
           <h3 class="heading font-bold">Code and Docs</h3>
           <p class="description font-light">
             There are three parts of the digital certificate codebase: 
@@ -84,6 +115,7 @@
               <button class="btn btn-default btn-github">Download our code from Github</button>
             </a>
           </p>
+          <a class="anchor" id="examples"></a>
           <h3 class="heading font-bold">Examples</h3>
           <p class="description font-light">
             We issued digital certificates (nicknamed "coins") to Media Lab alumni who attended the Lab's 30th anniversary in October 2015. <a href="https://coins.media.mit.edu/" target="_blank">Check out the certificates here.</a>
@@ -95,8 +127,10 @@
             The Laboratorio para la Ciudad in used our codebase to issue digital certificates to participants of a week-long workshop in Mexico City in September 2016. <a href="http://certs.labcd.mx/" target="_blank">Check out the certificates here.</a>
           </p>
           <p class="description font-light">Have you made a project using the digital certificate architecture? Please <a href="mailto:certs@media.mit.edu">let us know</a>.</p>
+          <a class="anchor" id="blog"></a>
           <h3 class="heading font-bold">Blog</h3>
           <p class="description font-light"> Want to learn more about the project? Check out our post <a target="_blank" href="https://medium.com/mit-media-lab/certificates-reputation-and-the-blockchain-aee03622426f#.kyxs24vf5">"Certificates, Reputation, and the Blockchain"</a> on Medium. </p>
+          <a class="anchor" id="contact"></a>
           <h3 class="heading font-bold">Contact</h3>
           <p class="description font-light">Curious for more information? For specific questions or ideas on how to collaborate, please get in touch with us by email (<a href="mailto:certs@media.mit.edu">certs@media.mit.edu</a>). If you want to follow our progress, please sign up to receive our updates via email. (We send very few emails.)</p>
           <!-- Begin MailChimp Signup Form -->
@@ -136,5 +170,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    $('body').scrollspy({ target: '#site-navbar' })
+  </script>
   </body>
 </html>
