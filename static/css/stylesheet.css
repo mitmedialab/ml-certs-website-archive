@@ -29,12 +29,13 @@ body{
   font-family: Neue Haas Grotesk, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 0.7px;
   padding-top: 70px;
+  color: #000;
 }
 
 a,
 a:hover,
 a:focus{
-  color: #333;
+  color: #000;
 }
 
 a,a:hover,a:focus{
